@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+    <script>
+        store=''
+        function rev(x){
+            for(var i=x.length-1;i>=0;i--){
+                store=x[i]+store;
+                if(store==x){
+                    document.write("=It is a palindrome" + "<br>")
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        let sentence="madam";
+        a=sentence.slice(0,5);
+        document.write(a);
+        rev(a);
+  
+        
+
+    </script>
+</body>
+</html>
